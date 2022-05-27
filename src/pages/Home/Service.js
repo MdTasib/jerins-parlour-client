@@ -1,8 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Service = ({ service }) => {
+	const navigate = useNavigate();
+
 	return (
-		<div className='card lg:max-w-lg bg-base-100 drop-shadow-md hover:drop-shadow-2xl cursor-pointer'>
+		<div
+			onClick={() => navigate(`/booking/${service._id}`)}
+			className='card lg:max-w-lg bg-base-100 drop-shadow-md hover:drop-shadow-2xl cursor-pointer'>
 			<figure className='px-10 pt-10'>
 				<img src={service.img} alt='Shoes' className='rounded-xl w-24' />
 			</figure>
