@@ -1,4 +1,5 @@
 import React from "react";
+import Customer from "./Customer";
 import Header from "./Header";
 import Services from "./Services";
 
@@ -7,6 +8,7 @@ const Home = () => {
 		<main>
 			<Header />
 			<Services />
+			<Customer />
 		</main>
 	);
 };
