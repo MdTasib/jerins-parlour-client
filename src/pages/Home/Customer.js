@@ -3,7 +3,7 @@ import cleanImg from "../../assets/Image/clean.png";
 
 const Customer = () => {
 	return (
-		<div class='px-10 py-20 hero h-full bg-secondary'>
+		<section class='px-10 py-20 hero h-full bg-secondary'>
 			<div class='hero-content flex-col lg:flex-row-reverse gap-20'>
 				<div class='text-center lg:text-left'>
 					<h1 class='text-3xl font-bold'>
@@ -30,7 +30,7 @@ const Customer = () => {
 					<img src={cleanImg} alt='' class='max-w-sm rounded-lg shadow-2xl' />
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

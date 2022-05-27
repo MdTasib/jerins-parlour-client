@@ -32,7 +32,7 @@ const Services = () => {
 		},
 	];
 	return (
-		<div className='px-10 py-16'>
+		<section className='px-10 py-16'>
 			<h2 className='text-center text-3xl font-bold'>
 				Our Awesome <small className='text-primary'>Services</small>
 			</h2>
@@ -44,7 +44,7 @@ const Services = () => {
 			<div className='text-center'>
 				<button className='btn btn-primary'>Explore more</button>
 			</div>
-		</div>
+		</section>
 	);
 };
 
