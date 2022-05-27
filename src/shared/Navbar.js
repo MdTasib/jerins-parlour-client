@@ -6,25 +6,28 @@ const Navbar = () => {
 	const menuItems = (
 		<>
 			<li>
-				<NavLink className='mx-3 py-1' to='/home'>
+				<NavLink className='mx-1 py-1' to='/home'>
 					Home
 				</NavLink>
 			</li>
 			<li>
-				<NavLink className='mx-3 py-1' to='/services'>
+				<NavLink className='mx-1 py-1' to='/services'>
 					Services
 				</NavLink>
 			</li>
 			<li>
-				<NavLink className='mx-3 py-1' to='/contact'>
+				<NavLink className='mx-1 py-1' to='/contact'>
 					Contact
 				</NavLink>
 			</li>
+			<Link to='/login' class='btn btn-sm btn-primary'>
+				Log In
+			</Link>
 		</>
 	);
 
 	return (
-		<div class='navbar bg-secondary'>
+		<div class='navbar bg-secondary px-10'>
 			<div class='navbar-start'>
 				<div class='dropdown'>
 					<label tabindex='0' class='btn btn-ghost lg:hidden'>
@@ -48,17 +51,12 @@ const Navbar = () => {
 						{menuItems}
 					</ul>
 				</div>
-				<Link to='/' class='btn btn-ghost normal-case text-xl'>
+				<Link to='/' class=''>
 					<img src={logo} alt='' className='w-24' />
 				</Link>
 			</div>
-			<div class='navbar-center hidden lg:flex'>
+			<div class='navbar-end hidden lg:flex'>
 				<ul class='menu menu-horizontal p-0'>{menuItems}</ul>
-			</div>
-			<div class='navbar-end'>
-				<Link to='/login' class='btn btn-sm btn-primary'>
-					Log In
-				</Link>
 			</div>
 		</div>
 	);
