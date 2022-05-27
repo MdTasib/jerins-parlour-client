@@ -1,5 +1,11 @@
+import Navbar from "./shared/Navbar";
+
 function App() {
-	return <button class='btn btn-primary'>One</button>;
+	return (
+		<>
+			<Navbar />
+		</>
+	);
 }
 
 export default App;
