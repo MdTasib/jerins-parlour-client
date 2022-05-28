@@ -18,8 +18,6 @@ const Book = () => {
 		return <Loading />;
 	}
 
-	console.log(booking);
-
 	return (
 		<div class='overflow-x-auto'>
 			<table class='table w-full'>

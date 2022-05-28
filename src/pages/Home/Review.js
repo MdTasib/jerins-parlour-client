@@ -8,8 +8,7 @@ const Review = ({ review }) => {
 				<div className='flex items-center'>
 					<div class='avatar placeholder'>
 						<div class='bg-secondary text-primary rounded-full w-16'>
-							<span class='text-2xl uppercase'>
-								{" "}
+							<span class='text-2xl uppercase font-bold'>
 								{review.userEmail.slice(0, 1)}
 							</span>
 						</div>

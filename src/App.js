@@ -12,6 +12,9 @@ import Review from "./pages/Home/Review";
 import Book from "./pages/Dashboard/Book";
 import MyReview from "./pages/Dashboard/MyReview";
 import Payment from "./pages/Payment/Payment";
+import OrderList from "./pages/Dashboard/OrderList";
+import AddService from "./pages/Dashboard/AddService";
+import ManageService from "./pages/Dashboard/ManageService";
 
 function App() {
 	return (
@@ -27,6 +30,9 @@ function App() {
 					<Route path='/dashboard/book' element={<Book />} />
 					<Route path='/dashboard/book-list' element={<BookList />} />
 					<Route path='/dashboard/review' element={<MyReview />} />
+					<Route path='/dashboard/order-list' element={<OrderList />} />
+					<Route path='/dashboard/add-service' element={<AddService />} />
+					<Route path='/dashboard/manage-service' element={<ManageService />} />
 				</Route>
 				<Route path='/booking/:id' element={<Booking />} />
 				<Route path='/payment/:id' element={<Payment />} />

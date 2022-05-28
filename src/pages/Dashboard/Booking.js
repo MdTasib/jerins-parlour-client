@@ -5,26 +5,26 @@ const Booking = ({ book }) => {
 
 	return (
 		<div className='card lg:max-w-lg bg-base-100 drop-shadow-md hover:drop-shadow-2xl cursor-pointer'>
-			<div className='grid grid-cols-2 items-center pt-5'>
+			<div className='grid grid-cols-2 justify-between items-center pt-5'>
 				<div>
 					<figure className=''>
 						<img src={img} alt='Shoes' className='rounded-xl w-16' />
 					</figure>
 				</div>
-				<div>
+				<div className='m-auto'>
 					{(!paid || !status) && (
-						<button className='btn btn-accent text-white-500 btn-sm'>
+						<button className='btn btn-accent text-blue-500 btn-sm'>
 							UNPAID
 						</button>
 					)}
 					{status === "pending" && (
 						<button className='btn btn-secondary text-primary btn-sm'>
-							{status ? status : "UNPAID"}
+							{status}
 						</button>
 					)}
-					{status === "done" && (
-						<button className='btn btn-success text-primary btn-sm'>
-							{status ? status : "UNPAID"}
+					{status === "DONE" && (
+						<button className='btn btn-success text-green-500 btn-sm'>
+							{status}
 						</button>
 					)}
 				</div>
