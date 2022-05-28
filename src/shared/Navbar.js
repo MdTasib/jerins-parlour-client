@@ -31,9 +31,16 @@ const Navbar = () => {
 				</NavLink>
 			</li>
 			{user ? (
-				<button onClick={() => signOut(auth)} class='btn btn-sm btn-primary'>
-					Log Out
-				</button>
+				<>
+					<li>
+						<NavLink className='mx-1 py-1' to='/dashboard'>
+							Dashboard
+						</NavLink>
+					</li>
+					<button onClick={() => signOut(auth)} class='btn btn-sm btn-primary'>
+						Log Out
+					</button>
+				</>
 			) : (
 				<Link to='/login' class='btn btn-sm btn-primary'>
 					Log In
