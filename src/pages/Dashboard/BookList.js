@@ -8,9 +8,9 @@ import Booking from "./Booking";
 const BookList = () => {
 	const [user, loading] = useAuthState(auth);
 	const { data: booking, isLoading } = useQuery("booking", () =>
-		fetch(`http://localhost:5000/booking/${user?.email}`).then(res =>
-			res.json()
-		)
+		fetch(
+			`https://thawing-peak-76489.herokuapp.com/booking/${user?.email}`
+		).then(res => res.json())
 	);
 
 	if (isLoading || loading) {

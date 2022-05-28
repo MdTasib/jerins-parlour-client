@@ -18,6 +18,7 @@ import ManageService from "./pages/Dashboard/ManageService";
 import NotFound from "./pages/NotFound/NotFound";
 import Services from "./pages/Home/Services";
 import Contact from "./pages/Home/Contact";
+import RequireAuth from "./pages/Login/RequriteAuth";
 
 function App() {
 	return (
@@ -29,11 +30,24 @@ function App() {
 				<Route path='/login' element={<Login />} />
 				<Route path='/services' element={<Services />} />
 				<Route path='/contact' element={<Contact />} />
-				<Route path='/booking/:id' element={<Booking />} />
+				<Route
+					path='/booking/:id'
+					element={
+						<RequireAuth>
+							<Booking />
+						</RequireAuth>
+					}
+				/>
 				<Route path='/payment/:id' element={<Payment />} />
 				<Route path='/singup' element={<Singup />} />
 
-				<Route path='/dashboard' element={<Dashboard />}>
+				<Route
+					path='/dashboard'
+					element={
+						<RequireAuth>
+							<Dashboard />
+						</RequireAuth>
+					}>
 					<Route index element={<DashboardIntro />} />
 					<Route path='/dashboard/book' element={<Book />} />
 					<Route path='/dashboard/book-list' element={<BookList />} />

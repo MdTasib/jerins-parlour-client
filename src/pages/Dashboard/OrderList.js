@@ -9,7 +9,9 @@ const OrderList = () => {
 		isLoading,
 		refetch,
 	} = useQuery("booking", () =>
-		fetch(`http://localhost:5000/booking`).then(res => res.json())
+		fetch(`https://thawing-peak-76489.herokuapp.com/booking`).then(res =>
+			res.json()
+		)
 	);
 
 	if (isLoading) {
@@ -33,7 +35,7 @@ const OrderList = () => {
 					status: "DONE",
 				};
 
-				fetch(`http://localhost:5000/purchase/${id}`, {
+				fetch(`https://thawing-peak-76489.herokuapp.com/purchase/${id}`, {
 					method: "PUT",
 					headers: {
 						"content-type": "application/json",

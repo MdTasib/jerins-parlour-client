@@ -10,7 +10,9 @@ const ManageService = () => {
 		isLoading,
 		refetch,
 	} = useQuery("service", () =>
-		fetch(`http://localhost:5000/service`).then(res => res.json())
+		fetch(`https://thawing-peak-76489.herokuapp.com/service`).then(res =>
+			res.json()
+		)
 	);
 
 	if (isLoading) {
@@ -28,7 +30,7 @@ const ManageService = () => {
 			confirmButtonText: "Delete",
 		}).then(result => {
 			if (result.isConfirmed) {
-				fetch(`http://localhost:5000/service/${id}`, {
+				fetch(`https://thawing-peak-76489.herokuapp.com/service/${id}`, {
 					method: "DELETE",
 					headers: {
 						"content-type": "application/json",

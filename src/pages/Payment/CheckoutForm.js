@@ -14,7 +14,7 @@ const CheckoutForm = ({ service }) => {
 	const { name, price, userName, userEmail, _id, img, description } = service;
 
 	useEffect(() => {
-		fetch("http://localhost:5000/create-payment-intent", {
+		fetch("https://thawing-peak-76489.herokuapp.com/create-payment-intent", {
 			method: "POST",
 			headers: {
 				"content-type": "application/json",
@@ -91,7 +91,7 @@ const CheckoutForm = ({ service }) => {
 				transactionId: paymentIntent.id,
 			};
 
-			fetch(`http://localhost:5000/payment/${_id}`, {
+			fetch(`https://thawing-peak-76489.herokuapp.com/payment/${_id}`, {
 				method: "PATCH",
 				headers: {
 					"content-type": "application/json",

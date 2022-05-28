@@ -18,7 +18,7 @@ const MyReview = () => {
 			date: new Date().toDateString(),
 		};
 
-		fetch(`http://localhost:5000/review`, {
+		fetch(`https://thawing-peak-76489.herokuapp.com/review`, {
 			method: "POST",
 			headers: {
 				"content-type": "application/json",

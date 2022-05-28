@@ -5,7 +5,9 @@ import Service from "./Service";
 
 const Services = () => {
 	const { data: services, isLoading } = useQuery("services", () =>
-		fetch("http://localhost:5000/service").then(res => res.json())
+		fetch("https://thawing-peak-76489.herokuapp.com/service").then(res =>
+			res.json()
+		)
 	);
 
 	if (isLoading) {

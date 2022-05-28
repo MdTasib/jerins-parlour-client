@@ -5,7 +5,9 @@ import Review from "./Review";
 
 const Testimonials = () => {
 	const { data: reviews, isLoading } = useQuery("reviews", () =>
-		fetch("http://localhost:5000/review").then(res => res.json())
+		fetch("https://thawing-peak-76489.herokuapp.com/review").then(res =>
+			res.json()
+		)
 	);
 
 	if (isLoading) {

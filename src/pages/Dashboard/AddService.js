@@ -31,7 +31,7 @@ const AddService = () => {
 				};
 
 				if (result.success) {
-					fetch(`http://localhost:5000/service`, {
+					fetch(`https://thawing-peak-76489.herokuapp.com/service`, {
 						method: "POST",
 						headers: {
 							"content-type": "application/json",
