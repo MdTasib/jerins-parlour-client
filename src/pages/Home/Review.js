@@ -1,48 +1,28 @@
 import React from "react";
+import ster from "../../assets/Icon/ster.png";
 
 const Review = ({ review }) => {
 	return (
 		<div className='card lg:max-w-lg bg-base-100 shadow-xl'>
 			<div className='card-body'>
 				<div className='flex items-center'>
-					<div className='avatar'>
-						<div className='w-16 rounded-full ring ring-primary ring-offset-base-100 mr-5'>
-							<img src={review.img} alt='' />
+					<div class='avatar placeholder'>
+						<div class='bg-secondary text-primary rounded-full w-16'>
+							<span class='text-2xl uppercase'>
+								{" "}
+								{review.userEmail.slice(0, 1)}
+							</span>
 						</div>
 					</div>
 					<div>
-						<h4 className='text-xl font-bold'>{review.name}</h4>
-						<p>{review.location}</p>
+						<h4 className='text-1xl font-bold ml-2'>{review.userName}</h4>
 					</div>
 				</div>
 				<small>{review.review}</small>
-				<div class='rating'>
-					<input
-						type='radio'
-						name='rating-2'
-						class='mask mask-star-2 bg-primary'
-					/>
-					<input
-						type='radio'
-						name='rating-2'
-						class='mask mask-star-2 bg-primary'
-						checked
-					/>
-					<input
-						type='radio'
-						name='rating-2'
-						class='mask mask-star-2 bg-primary'
-					/>
-					<input
-						type='radio'
-						name='rating-2'
-						class='mask mask-star-2 bg-primary'
-					/>
-					<input
-						type='radio'
-						name='rating-2'
-						class='mask mask-star-2 bg-primary'
-					/>
+				<div className='pt-2 flex'>
+					{[...Array(Number(review.rating))].map((star, index) => (
+						<img key={index} src={ster} alt='' className='mr-1 w-4' />
+					))}
 				</div>
 			</div>
 		</div>
