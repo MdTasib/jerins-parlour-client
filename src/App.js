@@ -15,6 +15,9 @@ import Payment from "./pages/Payment/Payment";
 import OrderList from "./pages/Dashboard/OrderList";
 import AddService from "./pages/Dashboard/AddService";
 import ManageService from "./pages/Dashboard/ManageService";
+import NotFound from "./pages/NotFound/NotFound";
+import Services from "./pages/Home/Services";
+import Contact from "./pages/Home/Contact";
 
 function App() {
 	return (
@@ -24,6 +27,11 @@ function App() {
 				<Route path='/' element={<Home />} />
 				<Route path='/home' element={<Home />} />
 				<Route path='/login' element={<Login />} />
+				<Route path='/services' element={<Services />} />
+				<Route path='/contact' element={<Contact />} />
+				<Route path='/booking/:id' element={<Booking />} />
+				<Route path='/payment/:id' element={<Payment />} />
+				<Route path='/singup' element={<Singup />} />
 
 				<Route path='/dashboard' element={<Dashboard />}>
 					<Route index element={<DashboardIntro />} />
@@ -34,9 +42,8 @@ function App() {
 					<Route path='/dashboard/add-service' element={<AddService />} />
 					<Route path='/dashboard/manage-service' element={<ManageService />} />
 				</Route>
-				<Route path='/booking/:id' element={<Booking />} />
-				<Route path='/payment/:id' element={<Payment />} />
-				<Route path='/singup' element={<Singup />} />
+
+				<Route path='*' element={<NotFound />} />
 			</Routes>
 			<Footer />
 		</>
