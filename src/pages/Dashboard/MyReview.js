@@ -43,17 +43,17 @@ const MyReview = () => {
 	}
 
 	return (
-		<div class='hero h-full'>
-			<div class='hero-content w-full'>
-				<div class='card w-full max-w-sm shadow-2xl bg-base-100'>
-					<form onSubmit={handleSubmit(onSubmit)} class='card-body'>
-						<div class='form-control'>
-							<label class='label'>
-								<span class='label-text'>Rating</span>
+		<div className='hero h-full'>
+			<div className='hero-content w-full'>
+				<div className='card w-full max-w-sm shadow-2xl bg-base-100'>
+					<form onSubmit={handleSubmit(onSubmit)} className='card-body'>
+						<div className='form-control'>
+							<label className='label'>
+								<span className='label-text'>Rating</span>
 							</label>
 							<select
 								{...register("rating")}
-								class='select select-primary w-full max-w-xs'>
+								className='select select-primary w-full max-w-xs'>
 								<option value='1'>1</option>
 								<option value='2'>2</option>
 								<option value='3'>3</option>
@@ -61,17 +61,17 @@ const MyReview = () => {
 								<option value='5'>5</option>
 							</select>
 						</div>
-						<div class='form-control'>
-							<label class='label'>
-								<span class='label-text'>Review Message</span>
+						<div className='form-control'>
+							<label className='label'>
+								<span className='label-text'>Review Message</span>
 							</label>
 							<textarea
 								{...register("review", { required: true })}
-								class='textarea textarea-primary'
+								className='textarea textarea-primary'
 								placeholder='Bio'></textarea>
 						</div>
-						<div class='form-control mt-6'>
-							<button class='btn btn-primary'>REVIEW</button>
+						<div className='form-control mt-6'>
+							<button className='btn btn-primary'>REVIEW</button>
 						</div>
 					</form>
 				</div>

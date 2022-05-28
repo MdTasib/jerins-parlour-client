@@ -19,8 +19,8 @@ const Book = () => {
 	}
 
 	return (
-		<div class='overflow-x-auto'>
-			<table class='table w-full'>
+		<div className='overflow-x-auto'>
+			<table className='table w-full'>
 				<thead>
 					<tr>
 						<th>SR</th>
@@ -35,8 +35,8 @@ const Book = () => {
 						<tr>
 							<th>{index + 1}</th>
 							<td>
-								<div class='avatar'>
-									<div class='w-12 rounded-full ring ring-accent ring-offset-base-100 ring-offset-2'>
+								<div className='avatar'>
+									<div className='w-12 rounded-full ring ring-accent ring-offset-base-100 ring-offset-2'>
 										<img src={book.img} alt='' />
 									</div>
 								</div>
@@ -46,7 +46,7 @@ const Book = () => {
 							<td>
 								{book.paid ? (
 									<>
-										<p class='badge badge-primary'>PAID</p>
+										<p className='badge badge-primary'>PAID</p>
 										<br />
 										<small className='text-green-500'>
 											XID : {book.transactionId}

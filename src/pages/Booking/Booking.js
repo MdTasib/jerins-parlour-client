@@ -59,20 +59,20 @@ const Booking = () => {
 			<h2 className='text-center font-bold text-2xl'>
 				<small className='text-2xl text-primary'>Booking</small> Service
 			</h2>
-			<div class='hero h-full'>
-				<div class='hero-content flex-col lg:flex-row-reverse gap-20'>
-					<div class='text-center lg:text-left'>
-						<div class='card w-96 bg-base-100 shadow-xl'>
+			<div className='hero h-full'>
+				<div className='hero-content flex-col lg:flex-row-reverse gap-20'>
+					<div className='text-center lg:text-left'>
+						<div className='card w-96 bg-base-100 shadow-xl'>
 							<figure>
 								<img src={service?.img} className='w-24 pt-5' alt='Shoes' />
 							</figure>
-							<div class='card-body'>
-								<h2 class='card-title'>
+							<div className='card-body'>
+								<h2 className='card-title'>
 									{service?.name}
-									<div class='badge badge-primary'>HOT</div>
+									<div className='badge badge-primary'>HOT</div>
 								</h2>
 								<small>{service?.description}</small>
-								<div class='card-actions justify-center'>
+								<div className='card-actions justify-center'>
 									<button
 										onClick={handleBooking}
 										className='btn w-full btn-primary'>
@@ -82,11 +82,11 @@ const Booking = () => {
 							</div>
 						</div>
 					</div>
-					<div class='card  w-full max-w-sm shadow-2xl bg-base-100'>
+					<div className='card  w-full max-w-sm shadow-2xl bg-base-100'>
 						<img
 							src={bookingImg}
 							alt=''
-							class='max-w-sm rounded-lg shadow-2xl'
+							className='max-w-sm rounded-lg shadow-2xl'
 						/>
 					</div>
 				</div>

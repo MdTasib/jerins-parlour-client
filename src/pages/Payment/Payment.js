@@ -26,40 +26,40 @@ const Payment = () => {
 
 	return (
 		<>
-			<div class='hero min-h-screen bg-secondary'>
-				<div class='hero-content flex-col lg:flex-row-reverse'>
-					<div class='text-center lg:text-left'>
-						<div class='card w-96 bg-base-100 shadow-xl'>
-							<div class='card-body'>
+			<div className='hero min-h-screen bg-secondary'>
+				<div className='hero-content flex-col lg:flex-row-reverse'>
+					<div className='text-center lg:text-left'>
+						<div className='card w-96 bg-base-100 shadow-xl'>
+							<div className='card-body'>
 								<Elements stripe={stripePromise}>
 									<CheckoutForm service={purchase[0]} />
 								</Elements>
 							</div>
 						</div>
 					</div>
-					<div class='card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100'>
-						<div class='card-body'>
-							<div class='form-control'>
+					<div className='card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100'>
+						<div className='card-body'>
+							<div className='form-control'>
 								<input
 									type='text'
 									placeholder={userName}
-									class='input input-bordered'
+									className='input input-bordered'
 									readOnly
 								/>
 							</div>
-							<div class='form-control'>
+							<div className='form-control'>
 								<input
 									type='text'
 									placeholder={userEmail}
-									class='input input-bordered'
+									className='input input-bordered'
 									readOnly
 								/>
 							</div>
-							<div class='form-control'>
+							<div className='form-control'>
 								<input
 									type='text'
 									placeholder={name}
-									class='input input-bordered'
+									className='input input-bordered'
 									readOnly
 								/>
 							</div>

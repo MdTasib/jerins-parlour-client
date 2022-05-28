@@ -3,14 +3,14 @@ import cleanImg from "../../assets/Image/clean.png";
 
 const Customer = () => {
 	return (
-		<section class='px-10 py-20 hero h-full bg-secondary'>
-			<div class='hero-content flex-col lg:flex-row-reverse gap-20'>
-				<div class='text-center lg:text-left'>
-					<h1 class='text-3xl font-bold'>
+		<section className='px-10 py-20 hero h-full bg-secondary'>
+			<div className='hero-content flex-col lg:flex-row-reverse gap-20'>
+				<div className='text-center lg:text-left'>
+					<h1 className='text-3xl font-bold'>
 						Let us handle your <br />
 						screen <span className='text-primary'>Professionally.</span>
 					</h1>
-					<p class='py-6'>
+					<p className='py-6'>
 						With well written codes, we build amazing apps for all platforms,
 						mobile and web apps in general ipsum. Lorem ipsum dolor sit amet,
 						consectetur adipiscing elit. Purus commodo ipsum.
@@ -26,8 +26,12 @@ const Customer = () => {
 						</div>
 					</div>
 				</div>
-				<div class='card  w-full max-w-sm shadow-2xl bg-base-100'>
-					<img src={cleanImg} alt='' class='max-w-sm rounded-lg shadow-2xl' />
+				<div className='card  w-full max-w-sm shadow-2xl bg-base-100'>
+					<img
+						src={cleanImg}
+						alt=''
+						className='max-w-sm rounded-lg shadow-2xl'
+					/>
 				</div>
 			</div>
 		</section>

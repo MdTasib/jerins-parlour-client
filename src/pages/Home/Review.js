@@ -6,9 +6,9 @@ const Review = ({ review }) => {
 		<div className='card lg:max-w-lg bg-base-100 shadow-xl'>
 			<div className='card-body'>
 				<div className='flex items-center'>
-					<div class='avatar placeholder'>
-						<div class='bg-secondary text-primary rounded-full w-16'>
-							<span class='text-2xl uppercase font-bold'>
+					<div className='avatar placeholder'>
+						<div className='bg-secondary text-primary rounded-full w-16'>
+							<span className='text-2xl uppercase font-bold'>
 								{review.userEmail.slice(0, 1)}
 							</span>
 						</div>
