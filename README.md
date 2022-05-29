@@ -6,11 +6,11 @@
 `Password`: admin00
 
 ## `TESTING CARD:`
-For payment process I am attaching a Test Credit Card below
-VISA CARD: 4242 4242 4242 4242
-MASTERCARD: 5555 5555 5555 4444
-Date: 4/24 `Any future date`
-CVC: 123 `Any 3 digits`
+For payment process I am attaching a Test Credit Card below  <br/>
+VISA CARD: 4242 4242 4242 4242  <br/>
+MASTERCARD: 5555 5555 5555 4444  <br/>
+Date: 4/24 `Any future date`  <br/>
+CVC: 123 `Any 3 digits`  <br/>
 Zip: 12345
 
 ## `PREVIEW:`
