@@ -5,6 +5,14 @@
 `Email`: admin@gmail.com <br/>
 `Password`: admin00
 
+## `TESTING CARD:`
+For payment process I am attaching a Test Credit Card below
+VISA CARD: 4242 4242 4242 4242
+MASTERCARD: 5555 5555 5555 4444
+Date: 4/24 `Any future date`
+CVC: 123 `Any 3 digits`
+Zip: 12345
+
 ## `PREVIEW:`
 
 Live Link: [https://jerins-parlourbd.web.app/](https://jerins-parlourbd.web.app/) <br/>
