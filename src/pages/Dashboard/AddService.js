@@ -31,7 +31,7 @@ const AddService = () => {
 				};
 
 				if (result.success) {
-					fetch(`https://thawing-peak-76489.herokuapp.com/service`, {
+					fetch(`https://jerins-parlour-server-bd.onrender.com/service`, {
 						method: "POST",
 						headers: {
 							"content-type": "application/json",

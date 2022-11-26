@@ -18,7 +18,7 @@ const MyReview = () => {
 			date: new Date().toDateString(),
 		};
 
-		fetch(`https://thawing-peak-76489.herokuapp.com/review`, {
+		fetch(`https://jerins-parlour-server-bd.onrender.com/review`, {
 			method: "POST",
 			headers: {
 				"content-type": "application/json",

@@ -9,7 +9,7 @@ const OrderList = () => {
 		isLoading,
 		refetch,
 	} = useQuery("booking", () =>
-		fetch(`https://thawing-peak-76489.herokuapp.com/booking`).then(res =>
+		fetch(`https://jerins-parlour-server-bd.onrender.com/booking`).then(res =>
 			res.json()
 		)
 	);
@@ -35,7 +35,7 @@ const OrderList = () => {
 					status: "DONE",
 				};
 
-				fetch(`https://thawing-peak-76489.herokuapp.com/purchase/${id}`, {
+				fetch(`https://jerins-parlour-server-bd.onrender.com/purchase/${id}`, {
 					method: "PUT",
 					headers: {
 						"content-type": "application/json",

@@ -9,7 +9,7 @@ import CheckoutForm from "./CheckoutForm";
 const Payment = () => {
 	const { id } = useParams();
 	const { data: purchase, isLoading } = useQuery(["purchase", id], () =>
-		fetch(`https://thawing-peak-76489.herokuapp.com/purchase/${id}`, {
+		fetch(`https://jerins-parlour-server-bd.onrender.com/purchase/${id}`, {
 			method: "GET",
 		}).then(res => res.json())
 	);

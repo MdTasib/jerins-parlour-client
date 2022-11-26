@@ -10,7 +10,7 @@ const Book = () => {
 	const navigate = useNavigate();
 	const { data: booking, isLoading } = useQuery("booking", () =>
 		fetch(
-			`https://thawing-peak-76489.herokuapp.com/booking/${user?.email}`
+			`https://jerins-parlour-server-bd.onrender.com/booking/${user?.email}`
 		).then(res => res.json())
 	);
 

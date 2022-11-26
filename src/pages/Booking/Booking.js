@@ -11,8 +11,8 @@ const Booking = () => {
 	const { id } = useParams();
 	const [user, loading] = useAuthState(auth);
 	const { data: service, isLoading } = useQuery("service", () =>
-		fetch(`https://thawing-peak-76489.herokuapp.com/service/${id}`).then(res =>
-			res.json()
+		fetch(`https://jerins-parlour-server-bd.onrender.com/service/${id}`).then(
+			res => res.json()
 		)
 	);
 
@@ -39,7 +39,7 @@ const Booking = () => {
 			confirmButtonText: "Booking",
 		}).then(result => {
 			if (result.isConfirmed) {
-				fetch("https://thawing-peak-76489.herokuapp.com/booking", {
+				fetch("https://jerins-parlour-server-bd.onrender.com/booking", {
 					method: "POST",
 					headers: {
 						"content-type": "application/json",

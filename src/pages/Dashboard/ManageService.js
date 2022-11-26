@@ -10,7 +10,7 @@ const ManageService = () => {
 		isLoading,
 		refetch,
 	} = useQuery("service", () =>
-		fetch(`https://thawing-peak-76489.herokuapp.com/service`).then(res =>
+		fetch(`https://jerins-parlour-server-bd.onrender.com/service`).then(res =>
 			res.json()
 		)
 	);
@@ -30,7 +30,7 @@ const ManageService = () => {
 			confirmButtonText: "Delete",
 		}).then(result => {
 			if (result.isConfirmed) {
-				fetch(`https://thawing-peak-76489.herokuapp.com/service/${id}`, {
+				fetch(`https://jerins-parlour-server-bd.onrender.com/service/${id}`, {
 					method: "DELETE",
 					headers: {
 						"content-type": "application/json",

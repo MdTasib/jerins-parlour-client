@@ -14,13 +14,16 @@ const CheckoutForm = ({ service }) => {
 	const { name, price, userName, userEmail, _id, img, description } = service;
 
 	useEffect(() => {
-		fetch("https://thawing-peak-76489.herokuapp.com/create-payment-intent", {
-			method: "POST",
-			headers: {
-				"content-type": "application/json",
-			},
-			body: JSON.stringify({ price }),
-		})
+		fetch(
+			"https://jerins-parlour-server-bd.onrender.com/create-payment-intent",
+			{
+				method: "POST",
+				headers: {
+					"content-type": "application/json",
+				},
+				body: JSON.stringify({ price }),
+			}
+		)
 			.then(res => res.json())
 			.then(data => {
 				if (data?.clientSecret) {
@@ -91,7 +94,7 @@ const CheckoutForm = ({ service }) => {
 				transactionId: paymentIntent.id,
 			};
 
-			fetch(`https://thawing-peak-76489.herokuapp.com/payment/${_id}`, {
+			fetch(`https://jerins-parlour-server-bd.onrender.com/payment/${_id}`, {
 				method: "PATCH",
 				headers: {
 					"content-type": "application/json",
